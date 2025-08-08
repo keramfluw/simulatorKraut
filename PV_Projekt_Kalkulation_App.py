@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="PV-Projekt-Kalkulation", layout="wide")
 
-st.title("☀️ Mareks PV-Projekt-Kalkulation Dashboard for Qrauts AG")
+st.title("☀️ Mareks PV-Projekt-Kalkulations Dashboard for Qrauts AG")
 
 # Eingabemaske
 st.sidebar.header("🔧 Eingabeparameter")
@@ -15,7 +15,7 @@ st.sidebar.header("🔧 Eingabeparameter")
 # Technisch-wirtschaftliche Parameter
 size_kwp = st.sidebar.number_input("Anlagengröße (kWp)", min_value=1.0, value=100.0)
 yield_kwh_kwp = st.sidebar.number_input("Spezifischer Ertrag (kWh/kWp)", min_value=500.0, value=950.0)
-self_consumption_rate = st.sidebar.slider("Eigenverbrauchsanteil (%)", 0, 100, 60)
+self_consumption_rate = st.sidebar.slider("Teilnehmerquote (%)", 0, 100, 60)
 system_efficiency = st.sidebar.slider("Systemnutzungsgrad (%)", 50, 100, 90)
 lifetime_years = st.sidebar.slider("Lebensdauer der Anlage (Jahre)", 10, 30, 25)
 
