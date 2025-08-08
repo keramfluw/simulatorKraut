@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="PV-Projekt-Kalkulation", layout="wide")
 
-st.title("☀️ Mareks PV-Projekt-Kalkulation Dashboard for Qrauts AG C 2025")
+st.title("☀️ Mareks PV-Projekt-Kalkulation Dashboard for Qrauts AG")
 
 # Eingabemaske
 st.sidebar.header("🔧 Eingabeparameter")
@@ -96,4 +96,4 @@ col1.metric("Amortisationsjahr", amort_year)
 col2.metric("geschätzte IRR-interne Rendite", f"{irr_estimate:.2%}" if irr_estimate else "n/a")
 col3.metric("LCOE-Stromgestehungskosten (€/kWh)", f"{lcoe:.4f}")
 
-st.caption("Hinweis: Die Berechnungen basieren auf vereinfachten Annahmen und dienen der Projektbewertung.")
+st.caption("Hinweis: Die Berechnungen basieren auf vereinfachten Annahmen und dienen der Projektbewertung. Ich als Developer bitte um Info bei einem berechtigtem Änderungumsatnd-Marek Wulff")
